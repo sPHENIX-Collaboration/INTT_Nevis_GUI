@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+# for Microsft Visual Studio
+## VS intermediate debug file
+*.idb
+## VS, information of the build
+*.tlog
+
+## VS, symbol file which is used for debugging
+*.pdb
+
+## information will be added....
+*.ipch
+*.ncb
+*.sdf
+*.ilk

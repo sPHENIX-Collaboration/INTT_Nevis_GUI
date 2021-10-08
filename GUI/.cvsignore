@@ -1,0 +1,9 @@
+*.pyc
+Debug
+*idb *.pdb
+read_DAQ.vcproj.*.*.user
+*.ncb
+Makefile Makefile.in aclocal.m4 autom4te.cache config.log config.status configure get_raw_events 
+*.la *.lo libtool testexternals.C
+.deps .libs
+*.dll

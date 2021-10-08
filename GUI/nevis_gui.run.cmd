@@ -1,0 +1,1 @@
+cmd /k python C:\Users\fvtx\Documents\online\fvtx\GUI\nevis_gui.py

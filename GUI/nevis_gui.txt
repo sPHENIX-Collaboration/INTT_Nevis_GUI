@@ -1,0 +1,34 @@
+
+DOCUMENTATION FOR THE GUI
+=========================
+
+Basic design philosophy:
+------------------------
+
+There are two sections: the modules and the global config/ops.  The
+modules are represented by a Notebook model on the left, with one tab
+per module.  Each module contains in it a list of chip configurations
+for ids 0 to 31, and one such list for each side of the module (sides
+are numbered 0 and 1).
+
+A chip's configuration consists of the 18 registers (though registers
+1 and 18 don't technically have a "value"), its chip ID, and an enable
+mask of size 128.
+
+To display or modify the values for the configuration, the user
+selects the desired side from the pull-down menu and enters the
+desired chip id in the entry field.  Changes to the register values
+are automatically stored in the internal configuration for that chip
+id (and module and side).  In order to send the value to the chip, the
+user presses the "write" button (or in the case of the enable mask,
+the "Send" button).
+
+Finally, the panel for each module includes a chip enable sub-panel.
+Next to each chip id, the user can turn on/off the chip id for each
+side.
+
+The right side of the GUI contains global configurations and
+operations panels.  This includes Reset, Init, the daq and a module
+enable panel (among other things).  The module enable panel determines
+which modules and sides within the module are turned on.
+
