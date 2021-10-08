@@ -1,0 +1,23 @@
+[Global]
+module ids = 15 0 1
+teststand = ROC
+beam species = None
+beam energy = 0
+daq program = Debug/read_DAQ_calib.exe
+daq sample rate = 5
+pulser amp = 255
+number of pulses = 1
+pulse interval = 1023
+
+[Module 15]
+enable = 1
+active side = 15
+
+[Module 0]
+enable = 0
+active side = 15
+
+[Module 1]
+enable = 0
+active side = 15
+

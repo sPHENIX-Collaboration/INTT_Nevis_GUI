@@ -1,0 +1,81 @@
+﻿Build started 11/10/2016 2:23:05 PM.
+     1>Project "C:\Users\fvtx\Documents\riken\selftrigger\GUI\read_DAQ.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\read_DAQ.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\boost\boost_1_44" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug" /Fd".\Debug" /Gd /TP /analyze- /errorReport:prompt read_DAQ.c
+         read_DAQ.c
+         Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+         - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
+         - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
+         Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(319): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(332): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(806): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(1002): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(1807): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(2409): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(2410): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(197) : see declaration of 'strtok'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\getpot(2414): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(197) : see declaration of 'strtok'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(304): warning C4101: 'ampl' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(304): warning C4101: 'det_id' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(297): warning C4101: 'first_word' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(297): warning C4101: 'second_word' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(304): warning C4101: 'fem_id' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(304): warning C4101: 'event' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(304): warning C4101: 'bco' : unreferenced local variable
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(496): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(499): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(504): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(506): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(507): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\program files\microsoft visual studio 10.0\vc\include\xutility(2227): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files\microsoft visual studio 10.0\vc\include\xutility(2212) : see declaration of 'std::_Copy_impl'
+                 c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(148) : see reference to function template instantiation '_OutIt std::copy<uInt32*,uInt32*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=uInt32 *,
+                     _InIt=uInt32 *
+                 ]
+     1>c:\program files\boost\boost_1_44\boost\thread\win32\thread_data.hpp(171): warning C4244: 'argument' : conversion from '__int64' to 'long', possible loss of data
+                 c:\users\fvtx\documents\riken\selftrigger\gui\read_daq.c(197) : see reference to function template instantiation 'void boost::this_thread::sleep<boost::date_time::subsecond_duration<base_duration,frac_of_second>>(const TimeDuration &)' being compiled
+                 with
+                 [
+                     base_duration=boost::posix_time::time_duration,
+                     frac_of_second=0x03e8,
+                     TimeDuration=boost::date_time::subsecond_duration<boost::posix_time::time_duration,0x03e8>
+                 ]
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\read_DAQ.exe.embed.manifest.res" Debug\read_DAQ_manifest.rc 
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\read_DAQ.exe" /INCREMENTAL /NOLOGO /LIBPATH:"c:\Program Files\boost\boost_1_44\lib" odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\read_DAQ.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\fvtx\Documents\riken\selftrigger\GUI\Debug\read_DAQ.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Debug\read_DAQ.lib" /MACHINE:X86 Debug\read_DAQ.exe.embed.manifest.res
+         .\Debug
+         NIDAQmx.lib
+         LINK : .\Debug\read_DAQ.exe not found or not built by the last incremental link; performing full link
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\read_DAQ.exe.embed.manifest" /manifest Debug\read_DAQ.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         read_DAQ.vcxproj -> C:\Users\fvtx\Documents\riken\selftrigger\GUI\Debug\read_DAQ.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\read_DAQ.unsuccessfulbuild".
+         Touching "Debug\read_DAQ.lastbuildstate".
+     1>Done Building Project "C:\Users\fvtx\Documents\riken\selftrigger\GUI\read_DAQ.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.53

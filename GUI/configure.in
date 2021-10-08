@@ -1,0 +1,18 @@
+AC_INIT([fvtx_gui], [1.0])
+AC_CONFIG_SRCDIR([read_DAQ.c])
+AM_INIT_AUTOMAKE([foreign])
+
+AC_PROG_CXX(CC g++)
+AC_ENABLE_STATIC(no)
+AC_PROG_LIBTOOL
+
+dnl No point in suppressing warnings -- people should 
+dnl at least see them, so here we go for g++: -Wall
+if test $ac_cv_prog_gxx = yes; then
+  CXXFLAGS="$CXXFLAGS -Wall"
+fi
+
+ROOTLIBS=`root-config --libs`
+AC_SUBST(ROOTLIBS)
+
+AC_OUTPUT(Makefile)
