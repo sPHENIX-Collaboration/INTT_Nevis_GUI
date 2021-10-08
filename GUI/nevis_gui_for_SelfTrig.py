@@ -87,7 +87,7 @@ class ChipIdEntry(ValidatingEntry):
             return None
 
 # Data directory
-data_dir = "C:/Users/sphenix/Documents/PHENIX/TestBench/data"
+data_dir = "C:\Users\sphenix\Documents\INTT_testbench\data"
 
 # Default chip id
 wild_chip_id = 21

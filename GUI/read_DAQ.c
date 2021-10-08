@@ -307,12 +307,19 @@ AcquireData(std::string ports, std::string pfi, double sampleHz, FILE* fp, FILE*
 		bool end_packet_found = false; //has end-packet (two successive '0' words) been found yet?
 		int end_zeros = 0;
 
+		
+		//sprintf(fileName, "c:/mannel/fphx_raw_%2.2d%2.2d%2.2d-%2.2d%2.2d.dat",
+			//timeinfo->tm_mday, timeinfo->tm_mon + 1,
+			//timeinfo->tm_year - 100, timeinfo->tm_hour, timeinfo->tm_min);
 
 		while ( take_data )	{
 			DAQmxErrCheck (DAQmxStartTask(taskHandle));
 			DAQmxErrCheck (DAQmxReadDigitalU32(taskHandle,-1,10.0,DAQmx_Val_GroupByChannel,
 				data,1000000,&numRead,NULL));
 			DAQmxErrCheck (DAQmxStopTask(taskHandle));
+
+			time_t nownow = time(&nownow);
+			struct tm* timeinfo = localtime(&nownow);
 
 			for (index = 0; index<1000000; index++) {
 				if ( roc )
@@ -392,7 +399,7 @@ AcquireData(std::string ports, std::string pfi, double sampleHz, FILE* fp, FILE*
 									if (datacnt >0 && chipid >0){ // Modified by Y.Yamaguchi on Nov.10, 2016
 										//printf("data %#x, chip_id %2i chan %3i, adc %i, ampl %i\n",word, chipid, chan_id, adc, ampl);
 										int ampl = ((PacketData[4] & 0x7F));
-										printf("data %#x, chip_id %2i chan %3i, adc %i, ampl %i\n",word, chipid, chan_id, adc, ampl);
+										printf("data %#x, chip_id %2i chan %3i, adc %i, ampl %i, time %2.2d:%2.2d:%2.2d\n",word, chipid, chan_id, adc, ampl, timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
 									}
 								}
 
@@ -526,7 +533,7 @@ main(int argc, char **argv)
 	// TODO: add these to the commandline arguments
 	const int NCARD = 1;
 	const char* ports[NCARD] = { "Dev1/port0:3" };
-	const char* pfi[NCARD] = { "/Dev1/PFI2" };
+	const char* pfi[NCARD] = { "/Dev1/PFI5" };
 
 	// NB: Do not delete these pointers.  boost::thread_group will
 	// delete them in its dtor, so if we delete them, it will be an error
@@ -560,8 +567,16 @@ main(int argc, char **argv)
 		// An alternative to a no-op loop might be to just join_all() and wait 
 		// for the threads to react to take_data going to zero.  Might be err-prone, though.
 		//
+
+		//int32 curTime = clock();
 		while ( take_data )
 		{
+		//	double T = (curTime - startTime) / CLOCKS_PER_SEC
+		//	if (T >= 60.) 
+		//	{
+		//		take_data = 0;
+		//		break;
+			}
 			// Sleep for a small amount to free up the CPU
 			boost::this_thread::sleep(boost::posix_time::milliseconds(1000));
 		}
