@@ -289,7 +289,25 @@ def global_start_daq_prog():
 	send_bco_start()
 	send_calib()
 	start_daq_prog(regpanels)
-
+	
+def cosmic_start_daq_prog():
+	send_fo_sync()
+	send_fpga_reset()
+	time.sleep(2)
+	#send_fo_sync()
+	send_reset(regpanels)
+	send_init(regpanels)
+	send_enable_ro(regpanels)
+	send_latch()
+	#send_latch()
+	#send_latch()
+	send_fem_lvl1_delay(int(fem_lvl1_delay_var.get()))
+	#send_pulse_module(int(pulse_module_var.get()),int(pulse_wedge_var.get()), f(int(femaddr_var.get())))
+	send_bco_start()
+	start_daq_prog(regpanels)
+	send_self_trig()
+	#time.sleep(2)
+	
 def browse_daq_prog(progvar):
     exe_fname = tkFileDialog.askopenfilename( filetypes=[('Executable Files','*.exe'), ('All Files', '*')],
                                              initialfile=daq_program, defaultextension='exe' )
@@ -637,14 +655,14 @@ def write_page(femaddr,row,col,side,chipid):
     vals = [ (0x0 << 7) |  1, # Global unmask all channels - dummy value?
              (0x0 << 7) | (0xFF & 5), # Digital control: 00000111 to activate both serial lines, accept hits, enable inject
              (0x0 << 3) |  1, # Vref: 0001
-             (0x0 << 7) | (0xFF & 20),#   Threshold DAC 0: 00001000
-             (0x0 << 7) | (0xFF & 25),#  Threshold DAC 1: 00010000
-             (0x0 << 7) | (0xFF & 30),#  Threshold DAC 2: 00100000
-             (0x0 << 7) | (0xFF & 35),#  Threshold DAC 3: 01001000
-             (0x0 << 7) | (0xFF & 40),#  Threshold DAC 4: 01010000
-             (0x0 << 7) | (0xFF & 45),# Threshold DAC 5: 01110000
-             (0x0 << 7) | (0xFF & 50),# Threshold DAC 6: 10010000
-             (0x0 << 7) | (0xFF & 176),# Threshold DAC 7: 10110000
+             (0x0 << 7) | (0xFF & 10),#   Threshold DAC 0: 00001000
+             (0x0 << 7) | (0xFF & 23),#  Threshold DAC 1: 00010000
+             (0x0 << 7) | (0xFF & 48),#  Threshold DAC 2: 00100000
+             (0x0 << 7) | (0xFF & 98),#  Threshold DAC 3: 01001000
+             (0x0 << 7) | (0xFF & 148),#  Threshold DAC 4: 01010000
+             (0x0 << 7) | (0xFF & 172),# Threshold DAC 5: 01110000
+             (0x0 << 7) | (0xFF & 223),# Threshold DAC 6: 10010000
+             (0x0 << 7) | (0xFF & 248),# Threshold DAC 7: 10110000
              (0x0 << 7) | (0xF & 4)  << 4 | (0xF & 6),# N1Sel & N2Sel: 01000110
              (0x0 << 7) | (0xF & 0)  << 4 | (0xF & 4), # LeakSel & FB1Sel: 00000100
              (0x0 << 7) | (0x3F & 4) << 4 | (0x3 & 0), # P2Sel & P3Sel: 01000000
@@ -950,9 +968,9 @@ class ChipConfig:
         # look at one variable: reg_vars[].
         #
         self.reg_vals = [ StringVar(master,'0'),   StringVar(master,'5'),   StringVar(master,'1'),
-                          StringVar(master,'20'),   StringVar(master,'25'),  StringVar(master,'30'),
-                          StringVar(master,'35'),  StringVar(master,'40'),  StringVar(master,'45'),
-                          StringVar(master,'50'), StringVar(master,'176'), StringVar(master,'6'),
+                          StringVar(master,'10'),   StringVar(master,'23'),  StringVar(master,'48'),
+                          StringVar(master,'98'),  StringVar(master,'148'),  StringVar(master,'172'),
+                          StringVar(master,'223'), StringVar(master,'248'), StringVar(master,'6'),
                           StringVar(master,'4'),   StringVar(master,'0'),   StringVar(master,'2'),
                           StringVar(master,'5'),   StringVar(master,'3'),  StringVar(master,'n/a') ]
 
@@ -1939,7 +1957,12 @@ if __name__ =='__main__':
 
     b = Button(ops_frame,text="Self Trig",width=10,bg='green')
     b.grid(row=3,column=col)
-    b.config(command=lambda : send_self_trig())    
+    b.config(command=lambda : send_self_trig())
+
+    b = Button(ops_frame,text="Cosmic Start",width=10,bg='white',fg='black')
+    b.grid(row=4,column=col)
+    b.config(command=lambda : cosmic_start_daq_prog())
+    col += 1
 
     irow = 0
     icol = 0

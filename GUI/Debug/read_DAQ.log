@@ -3,44 +3,42 @@
   - add -D_WIN32_WINNT=0x0501 to the compiler command line; or
   - add _WIN32_WINNT=0x0501 to your project's Preprocessor Definitions.
   Assuming _WIN32_WINNT=0x0501 (i.e. Windows XP target).
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(319): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(319): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1952): note: '_snprintf' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(332): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(332): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1952): note: '_snprintf' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(806): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(806): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: 'sscanf' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(1002): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(1002): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: 'strncpy' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(1805): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(1805): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1952): note: '_snprintf' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(2409): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(2409): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(2410): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(2410): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note: 'strtok' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\getpot(2414): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\getpot(2414): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note: 'strtok' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(322): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(297): warning C4101: 'first_word': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(304): warning C4101: 'event': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(304): warning C4101: 'bco': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(304): warning C4101: 'det_id': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(297): warning C4101: 'second_word': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(304): warning C4101: 'ampl': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(304): warning C4101: 'fem_id': ローカル変数は 1 度も使われていません。
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(496): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: 'localtime' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(297): warning C4101: 'first_word': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(304): warning C4101: 'event': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(304): warning C4101: 'bco': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(304): warning C4101: 'det_id': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(297): warning C4101: 'second_word': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(304): warning C4101: 'ampl': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(304): warning C4101: 'fem_id': ローカル変数は 1 度も使われていません。
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(503): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: 'localtime' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(504): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(497): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 'sprintf' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(511): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(504): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(513): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(506): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' の宣言を確認してください
-c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(514): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(507): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' の宣言を確認してください
 c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2372): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
   c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2372): note: 'std::copy::_Unchecked_iterators::_Deprecate' の宣言を確認してください
-  c:\users\sphenix\documents\intt_testbench\gui_bnl\gui1114\read_daq.c(148): note: コンパイル対象の関数 テンプレート インスタンス化 '_OutIt std::copy<uInt32*,uInt32*>(_InIt,_InIt,_OutIt)' のリファレンスを確認してください
+  c:\users\sphenix\documents\intt_testbench\gui_bnl\gui\read_daq.c(148): note: コンパイル対象の関数 テンプレート インスタンス化 '_OutIt std::copy<uInt32*,uInt32*>(_InIt,_InIt,_OutIt)' のリファレンスを確認してください
           with
           [
               _OutIt=uInt32 *,
@@ -57,5 +55,6 @@ c:\program files (x86)\microsoft visual studio 14.0\vc\include\xutility(2372): w
   c:\local\boost_1_66_0\boost\bind\placeholders.hpp(48): note: コンパイル対象のクラス テンプレート インスタンス化 'boost::arg<3>' のリファレンスを確認してください
   c:\local\boost_1_66_0\boost\bind\placeholders.hpp(47): note: コンパイル対象のクラス テンプレート インスタンス化 'boost::arg<2>' のリファレンスを確認してください
   c:\local\boost_1_66_0\boost\bind\placeholders.hpp(46): note: コンパイル対象のクラス テンプレート インスタンス化 'boost::arg<1>' のリファレンスを確認してください
-  read_DAQ.vcxproj -> C:\Users\sphenix\Documents\INTT_testbench\GUI_BNL\GUI1114\Debug\read_DAQ.exe
+Debug.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+  read_DAQ.vcxproj -> C:\Users\sphenix\Documents\INTT_testbench\GUI_BNL\GUI\Debug\read_DAQ.exe
   read_DAQ.vcxproj -> Debug\read_DAQ.pdb (Full PDB)
