@@ -1848,7 +1848,7 @@ if __name__ =='__main__':
     manual_frame.grid(row=5,column=1,sticky=N+W+E+S,columnspan=2)
 
     regpanels = []
-    moduleid = [ 15, 0, 1 ]
+    moduleid = [ 15, 0, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14 ]
     sideid = [ 15, 0, 1 ]
     chipids = [ i for i in range(0,32) ]
     for imod in range(0,len(moduleid)):
